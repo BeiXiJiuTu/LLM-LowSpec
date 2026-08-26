@@ -1,0 +1,70 @@
+# =============================
+#  LLM-LowSpec gitignore
+# =============================
+
+# ---- 模型权重 / 分片 (safetensors, GGUF, FTW, bin) ----
+**/*.safetensors
+**/*.gguf
+**/*.ftw
+**/*.bin
+**/*.safetensors.md5
+safetensors-md5sum.txt
+crc32.txt
+
+# ---- 模型目录（含 config/tokenizer，整体忽略，不推模型）----
+**/models/
+exllamav2-models/
+
+# ---- 运行时生成的转换缓存元数据（含本地绝对路径）----
+**/freetoken_weight.json
+**.quant_summary.txt
+
+# ---- 推理引擎二进制 / 安装包 ----
+**/llama/bin/
+**/*.exe
+**/*.dll
+**/*.pyd
+**/FreeToken Desktop/
+**/engine/
+
+# ---- Python 虚拟环境 ----
+**/venv/
+**/.venv/
+**/env/
+venv/
+.env
+venv.bak
+exl2-venv/
+
+# ---- 系统安全策略备份 / 日志（敏感）----
+**/SeLockMemory_Policy_Backup.inf
+**/secpol.inf
+**/secedit_apply.log
+**/_work/
+**/*_Backup.inf
+**/*.log
+
+# ---- Python 缓存 ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ---- 第三方应用（TextGen WebUI 等，非本项目代码）----
+textgen/
+
+# ---- 编辑器 / 系统 ----
+.idea/
+.vscode/
+*.swp
+*.tmp
+Thumbs.db
+.DS_Store
+
+# ---- 本地临时 / 运行状态 ----
+**/.convert-*/
+**/freetoken-kernel-cache/
+**/*.pid
