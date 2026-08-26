@@ -8,8 +8,20 @@
 | **Plan-A** | `LLM-LowSpec/Plan-A/` | llama.cpp | Qwen3.8-27B (UD-Q3_K_XL) | ~2.4 tok/s |
 | **Plan-B** | `LLM-LowSpec/Plan-B/` | FreeToken | gpt-oss-20b (MXFP4) | MoE 跑通 |
 
-> 详细技术剖析见 `低配硬件大模型高效部署全记录.md`（含 AirLLM / DFlash2 / FreeToken
-> 三大引擎源码级剖析、决策教训、性能数据汇总）。
+<div align="center">
+
+---
+
+### 完整部署全记录（首页展示用）
+
+**[《低配硬件大模型高效部署全记录》 →](低配硬件大模型高效部署全记录.md)**
+
+*RTX 4060 8G 显存 + 16G 内存 · 从 AirLLM 逐层流式到 llama.cpp / FreeToken 跑通 MoE 的
+完整工程复盘 · 含 AirLLM / DFlash2 / FreeToken 三大引擎源码级剖析、经验教训与性能实测数据汇总*
+
+---
+
+</div>
 
 ## 核心结论
 
